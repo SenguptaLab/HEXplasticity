@@ -1,2 +1,2 @@
 # HEXplasticity
-Repository of functions and data for Khan et al manuscript
+Repository of functions and data for Khan manuscript
