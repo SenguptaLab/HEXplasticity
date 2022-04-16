@@ -8,4 +8,4 @@ https://www.biorxiv.org/content/10.1101/2021.11.08.467792v1
 
 Raw data are available in the /rawdata folder in this repository, organized by figure. Analyses were performed in MATLAb and R and code is available in /code folder, organized by experiment.
 
-This package can be installed in R using devtools::install_github("SenguptaLab/HEXplasticity")
+This package can be installed in R using `devtools::install_github("SenguptaLab/HEXplasticity")`
