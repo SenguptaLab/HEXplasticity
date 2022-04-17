@@ -1,4 +1,4 @@
-#HEXplasticity
+**#HEXplasticity**
 
 Repository of functions and data for the manuscript:
 
