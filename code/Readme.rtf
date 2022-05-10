@@ -1,10 +1,33 @@
-Relevant codes for generating microfluidics behavior figures: (1) plotResidency_stripes.R, (2) plotAvgResidency.R
 
-Relevant codes for generating calcium imaging figures and amplitudes: (1) plotGCaMP_multi.R - can use (1a) plotAWC_img.R to get AWC specific plotting parameters and (1b) plotASH_img.R to get ASH specific plotting parameters, (2) pulse_amplitude.R, (3) for raw traces: (3a)Extract_F0.R, (3b) plotF0_rawtraces.R
+This package can be installed in R using devtools::install_github("SenguptaLab/HEXplasticity"). Depedency functions are located in the analysis R packages https://github.com/SenguptaLab/MF.matR.git and Albrecht lab Arena worm tracker Matlab package:https://github.com/albrechtLab/ArenaWormTracker 
 
-Microfluidics video acquisition and processing: (1) PX_MOJO.m, (2) preprocessMovie.m, (3) wormTrackers.m (compilation of 5 scripts: trackWorms.m, wormDensity_fast.m, states_fast.m, segmenttracks_fast.m, ethogram_fast.m), (4) exportMatFile.m
+Codes in the \generating plots folder are executable on raw data shared in the \raw data folder
+
+For generating calcium imaging tracers and amplitudes use: 
+(1)plotAWC_img.R to get AWC specific plotting parameters 
+(2)plotASH_img.R to get ASH specific plotting parameters
+(3)amplitude.R to get amplitude 
+(4)plotF0_rawtraces.R to get raw GCaMP traces without correction 
+(*check annotations of all of these)
+
+For generating microfluidics behavior plots and chemotaxis index use:
+(1)plotMF_residency_ctx on individual folders to obtain heatmap, residency, and chemotaxis index of each experiment
+(2)plotMF_avg_residency on a group of folders to obtain average residency plots for each condition/genotype
+
+Codes in the \data acquisition folder are not executable since the raw videos are not available in this repository due to storage limitations on GitHub.
 
 Calcium imaging video processing: register_quantGCaMP.ijm
 
-Depedency functions are located in the analysis R packages https://github.com/SenguptaLab/MF.matR.git and Albrecht lab Arena worm tracker Matlab package:https://github.com/albrechtLab/ArenaWormTracker 
+Microfluidics video acquisition: PX_MOJO.m
+
+Microfluidics video processing: (#2-#6 scripts and dependency functions can be found in Albrecht lab Arena worm tracker Matlab package:https://github.com/albrechtLab/ArenaWormTracker)
+
+(1) preprocessMovie.m
+(2)trackWorms.m
+(3)wormDensity.m
+(4)states.m
+(5)segmenttracks.m
+(6)ethogram.m
+(7)exportMatFile.m
+
 
